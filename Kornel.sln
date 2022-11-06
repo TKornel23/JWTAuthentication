@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kornel.JWTAuthentication", "Kornel.JWTAuthentication\Kornel.JWTAuthentication.csproj", "{0BC1E9A8-CCB9-41BD-A48C-C020736F4E5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kornel.UI", "Kornel.JWTAuthentication\Kornel.UI.csproj", "{0BC1E9A8-CCB9-41BD-A48C-C020736F4E5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kornel.Domain", "Kornel.Domain\Kornel.Domain.csproj", "{420177C5-41B4-4AD1-AA1E-87CDCF2B78B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kornel.Domain", "Kornel.Domain\Kornel.Domain.csproj", "{420177C5-41B4-4AD1-AA1E-87CDCF2B78B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kornel.Persistance", "Kornel.Persistance\Kornel.Persistance.csproj", "{90E415A0-D491-4C71-BB86-94CC495DBF45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kornel.Persistance", "Kornel.Persistance\Kornel.Persistance.csproj", "{90E415A0-D491-4C71-BB86-94CC495DBF45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

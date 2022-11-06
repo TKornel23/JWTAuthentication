@@ -1,9 +1,8 @@
 ﻿using Kornel.Domain;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Reflection.Metadata.Ecma335;
 
-namespace Kornel.JWTAuthentication.Controllers
+namespace Kornel
 {
     [Route("api/login")]
     [ApiController]
@@ -19,11 +18,11 @@ namespace Kornel.JWTAuthentication.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Login([FromBody]UserModel login)
+        public async Task<IActionResult> Login([FromBody] UserModel login)
         {
             var user = await authorizationService.AuthenticateUser(login);
 
-            if(user is not null)
+            if (user is not null)
             {
                 var tokenString = await authorizationService.GenerateJSONWebToken(user);
                 return Ok(new { token = tokenString });
